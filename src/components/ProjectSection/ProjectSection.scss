@@ -1,0 +1,61 @@
+@import "../../styles/variables.scss";
+
+.project_section {
+
+  padding: $p-section;
+
+  .project_article {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 15%;
+
+    .project_img_container {
+      .project_article_img {
+        width: 40vw;
+        aspect-ratio: 3/4;
+        object-fit: cover;
+      }
+    }
+
+    .project_content_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .project_article_title {
+        font-size: 72px;
+        font-family: $serif;
+        line-height: 1em;
+        font-style: italic;
+        translate: -25%;
+      }
+
+      .project_article_text {
+        margin: 24px 0;
+        max-width: 350px;
+
+        .project_article_date{
+          font-family: $serif;
+          margin-right: 2em;
+        }
+      }
+    }
+  }
+
+  // ################
+
+
+  .project_article.even {
+    flex-direction: row-reverse;
+
+    .project_content_container {
+      align-items: flex-end;
+      text-align: right;
+
+      .project_article_title {
+        translate: 25%;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+// COLORS
+$beige: #FFECDD;
+$red: #F93702;
+$black: #1D1D1D;
+
+
+// FONTS
+
+$sans-serif: 'Neue Montreal', sans-serif;
+$serif: 'Eiko', serif;
+
+$p-section: 16px 4vw;
+
+// MIXIN
+
+@mixin hover-brackets() {
+  &::after {
+    content: "))";
+    font-family: $serif;
+    color: transparent;
+  }
+  &::before {
+    content: "((";
+    font-family: $serif;
+    color: transparent;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      color: currentColor;
+    }
+  }
+}

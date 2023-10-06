@@ -1,0 +1,31 @@
+@import "../../styles/variables.scss";
+
+.mooving_tape_section{
+  width: 100%;
+  overflow: hidden; 
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .tape_row{
+    font-size: 3.5vh;
+    text-wrap: nowrap;
+
+    span{
+      display: inline-block;
+      margin: 0 12px;
+    }
+
+    .tape_txt_1{
+      font-family: $serif;
+      font-weight: 400;
+    }
+
+    .tape_txt_2{
+      font-family: $sans-serif;
+      font-weight: 300;
+    }
+  }
+}
