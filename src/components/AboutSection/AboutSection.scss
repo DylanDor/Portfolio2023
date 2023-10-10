@@ -1,5 +1,46 @@
 @import "../../styles/variables.scss";
 
-.about_section{
+.about_section {
   padding: $p-section;
+
+  .about_introduction_container {
+    position: relative;
+
+    .about_introduction_title {
+      font-size: 72px;
+      line-height: 1em;
+      margin-bottom: 1em;
+    }
+
+    .about_introduction_content {
+      width: calc(100% - 35rem - 32px);
+      display: flex;
+
+
+      .about_content_left{
+        flex: 1;
+      }
+
+      .about_content_right{
+        flex: 1;
+        margin-left: 72px;
+        margin-top: 5em;
+
+        p{
+          margin-top: 1em;
+        }
+      }
+    }
+    
+    .about_img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 35rem;
+      height: 100%;
+      object-fit: cover;
+      z-index: -9999;
+    }
+  }
 }
+

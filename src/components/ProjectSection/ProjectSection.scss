@@ -8,7 +8,11 @@
     display: flex;
     gap: 24px;
     width: 100%;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
 
     .project_img_container {
       .project_article_img {
